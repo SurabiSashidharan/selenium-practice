@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "TC01 - Valid login",
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!",
+    "expected_message": "You logged into a secure area!"
+  },
+  {
+    "scenario": "TC02 - Invalid password",
+    "username": "tomsmith",
+    "password": "WrongPassword!",
+    "expected_message": "Your password is invalid!"
+  },
+  {
+    "scenario": "TC03 - Invalid username",
+    "username": "wronguser",
+    "password": "SuperSecretPassword!",
+    "expected_message": "Your username is invalid!"
+  },
+  {
+    "scenario": "TC04 - case sensitive username",
+    "username": "TomSmith",
+    "password": "SuperSecretPassword!",
+    "expected_message": "Your username is invalid!"
+  }
+]

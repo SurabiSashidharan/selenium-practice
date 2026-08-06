@@ -1,3 +1,3 @@
 # Selenium POM Framework
 
-Automation Framework: Selenium + PyTest + POM
+Enterprise QA Automation Framework — Selenium, PyTest, POM

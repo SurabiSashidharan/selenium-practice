@@ -21,6 +21,6 @@
     "scenario": "TC04 - case sensitive username",
     "username": "TomSmith",
     "password": "SuperSecretPassword!",
-    "expected_message": "Your username is invalid!"
+    "expected_message": "Your password is invalid!"
   }
 ]

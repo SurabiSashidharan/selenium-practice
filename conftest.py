@@ -1,10 +1,17 @@
 import pytest
 import pytest_html
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture
 def driver():
-    drv = webdriver.Chrome()
+    options = Options()
+    # options.add_argument("--headless=new")
+    # drv = webdriver.Chrome(options=options)
+    drv = webdriver.Remote(
+        command_executor="http://localhost:4444/wd/hub",
+        options=options
+    )
     yield drv
     drv.quit()
 

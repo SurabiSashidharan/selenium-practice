@@ -10,7 +10,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'python -m venv .venv'
+                bat 'C:\\Users\\Yaashvy\\anaconda3\\python.exe -m venv .venv'
                 bat '.venv\\Scripts\\pip install -r requirements.txt'
             }
         }       

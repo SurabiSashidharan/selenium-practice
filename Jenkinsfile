@@ -10,13 +10,14 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat 'python -m venv .venv'
+                bat '.venv\\Scripts\\pip install -r requirements.txt'
             }
-        }
+        }       
 
         stage('Run Tests') {
             steps {
-                bat 'pytest -v --html=report.html --self-contained-html'
+                bat '.venv\\Scripts\\pytest -v --html=report.html --self-contained-html'
             }
         }
     }
